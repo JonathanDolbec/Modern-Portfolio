@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ -- recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ -- recursive",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Jonathan Dolbec",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+    "node-sass": "^4.11.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
